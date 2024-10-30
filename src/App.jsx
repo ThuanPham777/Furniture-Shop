@@ -10,6 +10,7 @@ import About from './pages/About';
 import Contact from './pages/Contact';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import ProductDetails from './pages/ProductDetails';
 
 function App() {
   return (
@@ -50,6 +51,10 @@ function App() {
             <Route
               path='/signup'
               element={<Signup />}
+            />
+            <Route
+              path='/product-details/:id'
+              element={<ProductDetails />}
             />
           </Routes>
         </div>

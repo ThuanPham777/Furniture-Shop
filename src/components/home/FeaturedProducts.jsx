@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProductCard from '../ProductCard';
+import ProductCard from '../../pages/ProductCard';
 import { FaArrowRightLong } from 'react-icons/fa6';
 
 const FeaturedProducts = () => {

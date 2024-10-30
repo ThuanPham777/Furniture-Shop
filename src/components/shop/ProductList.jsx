@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import ProductCard from '../ProductCard';
+import ProductCard from '../../pages/ProductCard';
 import SortDropdown from './SortDropdown';
 
 const ProductList = () => {
