@@ -6,6 +6,10 @@ import Shop from './pages/Shop';
 import Footer from './components/Footer';
 import Cart from './pages/Cart';
 import Wishlist from './pages/Wishlist';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
   return (
@@ -29,6 +33,23 @@ function App() {
             <Route
               path='/wishlist'
               element={<Wishlist />}
+            />
+            <Route
+              path='/about'
+              element={<About />}
+            />
+            <Route
+              path='/contact'
+              element={<Contact />}
+            />
+
+            <Route
+              path='/login'
+              element={<Login />}
+            />
+            <Route
+              path='/signup'
+              element={<Signup />}
             />
           </Routes>
         </div>
