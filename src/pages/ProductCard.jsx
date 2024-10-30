@@ -23,7 +23,9 @@ const ProductCard = ({ product }) => {
 
   const handleNavigateToDetails = () => {
     // Navigate to product details page with product ID and pass product data
-    navigate(`/product-details/${product.id}`, { state: { product } });
+    navigate(`/product-details/${product.id}`, {
+      state: { product, isInCart },
+    });
   };
 
   const isInWishlist = wishlistList.some((item) => item.id === product.id);
@@ -36,6 +38,7 @@ const ProductCard = ({ product }) => {
           src={product.images[0]}
           alt={product.name}
         />
+
         <div className='p-2 text-xl flex flex-col gap-3 absolute -right-20 top-2 group-hover:right-2 transition-all ease-in-out duration-500'>
           <button
             onClick={handleAddToWishlist}

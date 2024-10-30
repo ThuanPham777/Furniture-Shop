@@ -18,7 +18,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='w-full flex justify-center py-4 items-center shadow-md'>
+      <div className='w-full flex justify-center py-8 items-center shadow-md'>
         <div className='w-10/12 flex justify-between items-center px-2'>
           {/* Logo */}
           <div className='flex items-center'>
